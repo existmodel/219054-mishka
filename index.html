@@ -95,14 +95,16 @@
 			<section class="reviews">
 				<div class="reviews__wrapper">
 					<h2 class="reviews__title">Отзывы</h2>
-					<div class="reviews__list slider__list">
-						<blockquote class="reviews__item slider__item">
-							<p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных	инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-							<cite class="reviews__author-name">Анастасия Красильникова</cite>
-							<b class="reviews__author-email">@misssssiskras</b>
-						</blockquote>
-						<button class="reviews__prev" type="button">Предыдущий</button>
-		        <button class="reviews__next" type="button">Следующий</button>
+					<div class="reviews__list slider">
+						<div class="slider__list">
+							<blockquote class="reviews__item slider__item">
+								<p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных	инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+								<cite class="reviews__author-name">Анастасия Красильникова</cite>
+								<b class="reviews__author-email">@misssssiskras</b>
+							</blockquote>
+							<button class="reviews__prev" type="button">Предыдущий</button>
+			        <button class="reviews__next" type="button">Следующий</button>
+		    		</div>
 					</div>
 	        <a class="button reviews__write" href="#">Написать</a>
       	</div>
@@ -110,16 +112,8 @@
 			<section class="contacts">
 				<div class="contacts__wrapper">
 					<h2 class="contacts__title" >Контакты</h2>
-					<table class="contacts__list">
-							<tr>
-								<td class="contacts__parameter">E-mail:</td>
-								<td class="contacts__value contacts__email">info@mimimishkashop.ru</td>
-							</tr>
-							<tr>
-								<td class="contacts__parameter">адрес:</td>
-								<td class="contacts__value"> г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-							</tr>
-					</table>
+					<p class="contacts__email">e-mail: info@mimimishkashop.ru</p>
+					<p class="contacts__adress">адрес:  г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
 					<a class="contacts__map" href="#">
 						<img src="http://placehold.it/150x100" alt="Карта">
 					</a>
@@ -149,12 +143,22 @@
     	</div>
     </footer>
     <div class="popup-cart">
-    	<h2 class="popup-cart__title">Добавить в корзину</h2>
-    	<p class="popup-cart__description">Выберите размер:</p>
-    	<button class="popup-cart__size popup-cart__size--small">s</button>
-    	<button class="popup-cart__size popup-cart__size--medium">m</button>
-    	<button class="popup-cart__size popup-cart__size--large">l</button>
-    	<a class="popup-cart__add-button" href="#">Добавить</a>
+			<h2 class="popup-cart__title">Добавить в корзину</h2>
+	    <form class="popup-cart-form" action="https://echo.htmlacademy.ru" method="post">	
+				<fieldset class="popup-cart-form__wrapper">
+					<legend class="popup-cart-form__title">Выберите размер:</legend>
+			    <input class="popup-cart-form__radio" id="size-1" type="radio" name="size" value="size-s" checked>
+			    <label class="popup-cart-form__label" for="size-1">s</label>
+			    <input class="popup-cart-form__radio" id="size-2" type="radio" name="size" value="size-m">
+			    <label class="popup-cart-form__label" for="size-2">m</label>
+			    <input class="popup-cart-form__radio" id="size-3" type="radio" name="size" value="size-l">
+			    <label class="popup-cart-form__label" for="size-3">l</label>
+			    <input class="button popup-cart__button" type="submit" value="Добавить">      
+				</fieldset>
+			</form>
     </div>
   </body>
+
+
+
 </html>

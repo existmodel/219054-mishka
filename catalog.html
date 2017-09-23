@@ -17,7 +17,7 @@
 	            <a href="#">Каталог товаров</a>
 	          </li>
 	          <li class="site-list__item">
-	            <a href="#">Вязание на заказ</a>
+	            <a href="form.html">Вязание на заказ</a>
 	          </li>
 	          <li class="site-list__item">
 	            <a href="#">Поиск по сайту</a>
@@ -88,12 +88,19 @@
     	</div>
     </footer>
     <div class="popup-cart">
-    	<h2 class="popup-cart__title">Добавить в корзину</h2>
-    	<p class="popup-cart__description">Выберите размер:</p>
-    	<button class="popup-cart__size popup-cart__size--small">s</button>
-    	<button class="popup-cart__size popup-cart__size--medium">m</button>
-    	<button class="popup-cart__size popup-cart__size--large">l</button>
-    	<a class="popup-cart__add-button" href="#">Добавить</a>
+			<h2 class="popup-cart__title">Добавить в корзину</h2>
+	    <form class="popup-cart-form" action="https://echo.htmlacademy.ru" method="post">	
+				<fieldset class="popup-cart-form__wrapper">
+					<legend class="popup-cart-form__title">Выберите размер:</legend>
+			    <input class="popup-cart-form__radio" id="size-1" type="radio" name="size" value="size-s" checked>
+			    <label class="popup-cart-form__label" for="size-1">s</label>
+			    <input class="popup-cart-form__radio" id="size-2" type="radio" name="size" value="size-m">
+			    <label class="popup-cart-form__label" for="size-2">m</label>
+			    <input class="popup-cart-form__radio" id="size-3" type="radio" name="size" value="size-l">
+			    <label class="popup-cart-form__label" for="size-3">l</label>
+			    <input class="button popup-cart__button" type="submit" value="Добавить">      
+				</fieldset>
+			</form>
     </div>
   </body>
 </html>
