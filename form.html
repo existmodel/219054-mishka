@@ -11,18 +11,18 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+        <div class="main-nav__content">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">Вязание на заказ</a>
             </li>
-            <li class="site-list__item site-list__item--search">
+            <li class="main-nav__item main-nav__item--search">
               <a href="#">Поиск по сайту</a>
             </li>
-            <li class="site-list__item site-list__item--cart">
+            <li class="main-nav__item main-nav__item--cart">
               <a href="#">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -33,14 +33,14 @@
       <h1 class="page-form__title">Вязание на заказ</h1>
       <p class="page-form__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__wrapper">
+        <fieldset class="form__content">
           <legend class="form__title">Тип</legend>
           <input class="form__radio" id="type-1" type="radio" name="type" value="accessory" checked>
           <label class="form__label" for="type-1">Аксессуар для интерьера</label>
           <input class="form__radio" id="type-2" type="radio" name="type" value="toy">
           <label class="form__label" for="type-2">Детская игрушка</label>
         </fieldset>
-        <fieldset class="form__wrapper">
+        <fieldset class="form__block">
           <legend class="form__title">Цвет</legend>
           <input class="form__checkbox" id="color-1" type="checkbox" name="color-1" checked>
           <label class="form__label" for="color-1">Белый</label>
@@ -55,7 +55,7 @@
           <input class="form__checkbox" id="color-6" type="checkbox" name="color-6">
           <label class="form__label" for="color-6">Оранжевый</label>
         </fieldset>
-        <fieldset class="form__wrapper">
+        <fieldset class="form__block">
           <legend class="form__title">ФИО</legend>
           <label class="form__name-label" for="name-field">Имя:</label>
           <input class="form__name-input" id="name-field" type="text" name="user-name" placeholder="Введите ваше имя*">
@@ -64,45 +64,43 @@
           <label class="form__patronymic-label" for="patronymic-field">Отчество:</label>
           <input class="form__patronymic-input" id="patronymic-field" type="text" name="user-patronymic" placeholder="Отчество, если желаете">
         </fieldset>
-        <fieldset class="form__wrapper">
+        <fieldset class="form__block">
           <legend class="form__title">Тел</legend>
           <label class="form__phone-label" for="phone-field"></label>
           <input class="form__phone-input" id="phone-field" type="tel" name="user-phone" placeholder="+7xxx xx xx*">
         </fieldset>
-        <fieldset class="form__wrapper">
+        <fieldset class="form__block">
           <legend class="form__title">E-mail</legend>
           <label class="form__email-label" for="email-field"></label>
           <input class="form__email-input" id="email-field" type="email" name="user-email" placeholder="Ваш Email*">
         </fieldset>
-        <fieldset class="form__wrapper">
+        <fieldset class="form__block">
           <legend class="form__title">Доп</legend>
           <label class="form__textarea" for="textarea"></label>
           <textarea id="textarea" name="textarea" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
-        <small class="form__legend ">
+        <small class="form__legend">
           <sup>*</sup>Поля обязательны для заполнения
         </small>
         <input class="button form__button" type="submit" value="Отправить заказ">
       </form>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
-            </li>
-          </ul>
-        </div>
+      <div class="page-footer__content">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+          </li>
+        </ul>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>

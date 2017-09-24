@@ -11,18 +11,18 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+        <div class="main-nav__content">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="#">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item main-nav__item--search">
               <a href="#">Поиск по сайту</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item main-nav__item--cart">
               <a href="#">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -32,7 +32,7 @@
     <main class="page-catalog">
       <section class="catalog">
         <h1 class="catalog__title">Каталог товаров</h1>
-        <div class="catalog__wrapper">
+        <div class="catalog__content">
           <article class="item-card">
             <img class="item-card__img" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
             <h2 class="item-card__title">Зайчик-попрыгайчик</h2>
@@ -57,7 +57,7 @@
         </div>
       </section>
       <section class="production-video">
-        <div class="production-video__wrapper">
+        <div class="production-video__content">
           <h2 class="production-video__title">Процесс производства</h2>
           <video src="#" controls></video>
           <p class="production-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -65,32 +65,29 @@
         </div>
       </section>
     </main>
-
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
-            </li>
-          </ul>
-        </div>
+      <div class="page-footer__content">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+          </li>
+        </ul>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
     <div class="popup-cart">
       <h2 class="popup-cart__title">Добавить в корзину</h2>
       <form class="popup-cart-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="popup-cart-form__wrapper">
+        <fieldset class="popup-cart-form__content">
           <legend class="popup-cart-form__title">Выберите размер:</legend>
           <input class="popup-cart-form__radio" id="size-1" type="radio" name="size" value="size-s" checked>
           <label class="popup-cart-form__label" for="size-1">s</label>

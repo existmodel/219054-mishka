@@ -11,18 +11,18 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+        <div class="main-nav__content">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Вязание на заказ</a>
+            <li class="main-nav__item">
+              <a href="form.html">Вязание на заказ</a>
             </li>
-            <li class="site-list__item site-list__item--search">
+            <li class="main-nav__item main-nav__item--search">
               <a href="#">Поиск по сайту</a>
             </li>
-            <li class="site-list__item site-list__item--cart">
+            <li class="main-nav__item main-nav__item--cart">
               <a href="#">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -44,7 +44,7 @@
     </header>
     <main class="page-main">
       <article class="product product--promo">
-        <div class="product__wrapper">
+        <div class="product__content">
           <h2 class="product__title">Вязанные корзинки</h2>
           <h3 class="product__promo-title">Товар недели</h3>
             <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -68,7 +68,7 @@
         </div>
       </article>
       <section class="profile">
-        <div class="profile__wrapper">
+        <div class="profile__content">
           <h2 class="profile__title">Коротко о нас</h2>
           <ul class="profile__list">
             <li class="profile__item profile__item--ecology">
@@ -93,7 +93,7 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper">
+        <div class="reviews__content">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__list slider">
             <div class="slider__list">
@@ -110,7 +110,7 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__content">
           <h2 class="contacts__title" >Контакты</h2>
           <p class="contacts__email">e-mail: info@mimimishkashop.ru</p>
           <p class="contacts__adress">адрес:  г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
@@ -122,30 +122,28 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
-            </li>
-          </ul>
-        </div>
+      <div class="page-footer__content">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+          </li>
+        </ul>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
     <div class="popup-cart">
       <h2 class="popup-cart__title">Добавить в корзину</h2>
       <form class="popup-cart-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="popup-cart-form__wrapper">
+        <fieldset class="popup-cart-form__content">
           <legend class="popup-cart-form__title">Выберите размер:</legend>
           <input class="popup-cart-form__radio" id="size-1" type="radio" name="size" value="size-s" checked>
           <label class="popup-cart-form__label" for="size-1">s</label>
