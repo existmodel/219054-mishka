@@ -1,0 +1,22 @@
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header__title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: $font-stack;
+  background-image: url(../img/hero-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin:0;
+}
+
+.page-header__logo-image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

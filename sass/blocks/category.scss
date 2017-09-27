@@ -1,0 +1,21 @@
+@import "../variables";
+
+.category__decor {
+  background-color: $aquamarine;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.category__toys {
+  background-color: #56c3b2;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.category__title {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.category__title-link {
+  color: #ffffff;
+}
+

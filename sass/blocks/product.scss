@@ -1,0 +1,30 @@
+.product {
+  margin-bottom: 30px;
+}
+
+.product__title {
+  @include second-title;
+}
+.product__promo-title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $aquamarine;
+  text-transform: uppercase;
+}
+.product__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $dark-grey;
+}
+.product__list {
+  font-size: 15px;
+  line-height: 20px;
+  color: $dark-grey;
+}
+.product__price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $dark-grey;
+}
