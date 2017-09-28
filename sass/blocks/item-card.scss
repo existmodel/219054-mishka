@@ -1,0 +1,21 @@
+.item-card {
+  border: 1px solid #ededed;
+  padding: 20px;
+  margin: 20px;
+}
+
+.item-card__title {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.item-card__features {
+  font-size: 13px;
+  line-height: 30px;
+  color: $primary-color;
+}
+
+.item-card__price {
+  font-size: 15px;
+  line-height: 24px;
+}

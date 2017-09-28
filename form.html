@@ -3,27 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Mishka">
+      <a class="page-header__logo"  href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Mishka">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__content">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Вязание на заказ</a>
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item main-nav__item--search">
-              <a href="#">Поиск по сайту</a>
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--cart">
-              <a href="#">Корзина: пока пуста</a>
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -33,7 +36,7 @@
       <h1 class="page-form__title">Вязание на заказ</h1>
       <p class="page-form__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__content">
+        <fieldset class="form__block">
           <legend class="form__title">Тип</legend>
           <input class="form__radio" id="type-1" type="radio" name="type" value="accessory" checked>
           <label class="form__label" for="type-1">Аксессуар для интерьера</label>
@@ -55,29 +58,32 @@
           <input class="form__checkbox" id="color-6" type="checkbox" name="color-6">
           <label class="form__label" for="color-6">Оранжевый</label>
         </fieldset>
+
         <fieldset class="form__block">
           <legend class="form__title">ФИО</legend>
-          <label class="form__name-label" for="name-field">Имя:</label>
-          <input class="form__name-input" id="name-field" type="text" name="user-name" placeholder="Введите ваше имя*">
-          <label  class="form__surname-label" for="surname-field">Фамилия:</label>
-          <input class="form__surname-input" id="surname-field" type="text" name="user-surname" placeholder="Укажите фамилию*">
-          <label class="form__patronymic-label" for="patronymic-field">Отчество:</label>
-          <input class="form__patronymic-input" id="patronymic-field" type="text" name="user-patronymic" placeholder="Отчество, если желаете">
+          <label class="form__label form__label--name" for="name-field">Имя:</label>
+          <input class="form__input form__input--name" id="name-field" type="text" name="user-name" placeholder="Введите ваше имя*">
+
+          <label  class="form__label form__label--surname" for="surname-field">Фамилия:</label>
+          <input class="form__input form__input--surname" id="surname-field" type="text" name="user-surname" placeholder="Укажите фамилию*">
+
+          <label class="form__label form__label--patronymic" for="patronymic-field">Отчество:</label>
+          <input class="form__input form__input--patronymic" id="patronymic-field" type="text" name="user-patronymic" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="form__block">
           <legend class="form__title">Тел</legend>
-          <label class="form__phone-label" for="phone-field"></label>
-          <input class="form__phone-input" id="phone-field" type="tel" name="user-phone" placeholder="+7xxx xx xx*">
+          <label class="form__label" for="phone-field"></label>
+          <input class="form__input form__input--phone" id="phone-field" type="tel" name="user-phone" placeholder="+7xxx xx xx*">
         </fieldset>
         <fieldset class="form__block">
           <legend class="form__title">E-mail</legend>
-          <label class="form__email-label" for="email-field"></label>
-          <input class="form__email-input" id="email-field" type="email" name="user-email" placeholder="Ваш Email*">
+          <label class="form__label" for="email-field"></label>
+          <input class="form__input form__input--email" id="email-field" type="email" name="user-email" placeholder="Ваш Email*">
         </fieldset>
         <fieldset class="form__block">
           <legend class="form__title">Доп</legend>
-          <label class="form__textarea" for="textarea"></label>
-          <textarea id="textarea" name="textarea" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <label class="form__textarea-label" for="textarea"></label>
+          <textarea class="form__textarea" id="textarea" name="textarea" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <small class="form__legend">
           <sup>*</sup>Поля обязательны для заполнения

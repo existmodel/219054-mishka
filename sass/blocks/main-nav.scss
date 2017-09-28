@@ -1,0 +1,15 @@
+.main-nav {
+  // display: none;
+}
+
+.main-nav__list {
+  list-style-type: none;
+}
+
+.main-nav__link {
+  color: #000000;
+  font-family: $font-stack;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}

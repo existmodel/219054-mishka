@@ -1,0 +1,27 @@
+.profile {
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.profile__title {
+  @extend %second-title;
+}
+
+.profile__list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.profile__item {
+  position: relative;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
