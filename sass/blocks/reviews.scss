@@ -1,8 +1,10 @@
 .reviews {
   margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .reviews__title {
-  @include second-title;
+  @extend %second-title;
 }
 .reviews__list {
   margin-bottom: 30px;
@@ -10,9 +12,11 @@
 .reviews__text {
   font-size: 15px;
   line-height: 30px;
-  color: $dark-grey;
+  color: $primary-color;
 }
-
+.reviews__item {
+  margin: 0;
+}
 .reviews__author-name {
   font-size: 17px;
   line-height: 24px;
@@ -22,6 +26,6 @@
 .reviews__author-email {
   font-size: 17px;
   line-height: 30px;
-  color: $dark-grey;
+  color: $primary-color;
   font-weight: normal;
 }

@@ -1,18 +1,19 @@
 .contacts {
   margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
-
-.contacts__title  {
+.contacts__title {
   font-size: 18px;
   line-height: 30px;
 }
-
 .contacts__email,
 .contacts__adress {
   font-size: 15px;
   line-height: 30px;
-  color: $dark-grey;
+  color: $primary-color;
 }
-.contacts__email-highlight {
-  border-bottom: 1px solid $aquamarine;
+.contacts__email-adress {
+  border-bottom: 1px solid $secondary-color;
+  color: $primary-color;
 }

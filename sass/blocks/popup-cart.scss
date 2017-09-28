@@ -1,5 +1,5 @@
 .popup-cart__title {
-  @include second-title ;
+  @extend %second-title;
   text-transform: uppercase;
 }
 .popup-cart-form__content {
@@ -8,16 +8,16 @@
 .popup-cart-form__title {
   font-size: 15px;
   line-height: 30px;
-  color: $dark-grey;
+  color: $primary-color;
 }
 .popup-cart-form__label {
   font-size: 17px;
   line-height: 16px;
-  color: $dark-grey;
+  color: $primary-color;
   text-transform: uppercase;
 }
 .popup-cart__button {
-  background-color: $aquamarine;
-  border: 1px solid $aquamarine;
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
   color: #fff;
 }

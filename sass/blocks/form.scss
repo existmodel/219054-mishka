@@ -1,70 +1,51 @@
+.form {
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .form__block {
   border: none;
+  padding: 0;
+  margin-bottom: 20px;
 }
-
 .form__title {
-  color: $aquamarine;
+  color: $secondary-color;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .form__label {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .form__radio,
 .form__checkbox {
   display: none;
 }
-.form__name-label {
-  @include form-label-tool;
-}
-.form__name-input {
-  @include form-input-tool;
-}
-.form__surname-label {
-  @include form-label-tool;
-}
-.form__surname-input{
-  @include form-input-tool;
-}
-.form__patronymic-label {
-  @include form-label-tool;
-}
-.form__patronymic-input {
-  width: 260px;
-  @include form-input-tool;
-}
-.form__surname-input {
-  @include form-input-tool;
-}
-.form__phone-label {
-  @include form-label-tool;
-}
-.form__phone-input {
-  @include form-input-tool;
-}
-.form__email-label {
-  @include form-label-tool;
-}
-.form__email-input {
-  @include form-input-tool;
+.form__input {
+  color: $primary-color;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  margin-bottom: 10px;
 }
 .form__textarea {
   font-size: 17px;
   line-height: 18px;
-  color: $dark-grey;
-  border: 2px solid $dark-grey;
-
+  color: $primary-color;
+  border: 2px solid $primary-color;
 }
 .form__legend {
   font-size: 14px;
   line-height: 16px;
-  color: $dark-grey;
+  color: $primary-color;
 }
 .form__button {
   background-color: transparent;
-
 }

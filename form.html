@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header class="page-header">
@@ -56,24 +57,27 @@
           <input class="form__checkbox" id="color-6" type="checkbox" name="color-6">
           <label class="form__label" for="color-6">Оранжевый</label>
         </fieldset>
+
         <fieldset class="form__block">
           <legend class="form__title">ФИО</legend>
-          <label class="form__name-label" for="name-field">Имя:</label>
-          <input class="form__name-input" id="name-field" type="text" name="user-name" placeholder="Введите ваше имя*">
-          <label  class="form__surname-label" for="surname-field">Фамилия:</label>
-          <input class="form__surname-input" id="surname-field" type="text" name="user-surname" placeholder="Укажите фамилию*">
-          <label class="form__patronymic-label" for="patronymic-field">Отчество:</label>
-          <input class="form__patronymic-input" id="patronymic-field" type="text" name="user-patronymic" placeholder="Отчество, если желаете">
+          <label class="form__label form__label--name" for="name-field">Имя:</label>
+          <input class="form__input form__input--name" id="name-field" type="text" name="user-name" placeholder="Введите ваше имя*">
+
+          <label  class="form__label form__label--surname" for="surname-field">Фамилия:</label>
+          <input class="form__input form__input--surname" id="surname-field" type="text" name="user-surname" placeholder="Укажите фамилию*">
+
+          <label class="form__label form__label--patronymic" for="patronymic-field">Отчество:</label>
+          <input class="form__input form__input--patronymic" id="patronymic-field" type="text" name="user-patronymic" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="form__block">
           <legend class="form__title">Тел</legend>
-          <label class="form__phone-label" for="phone-field"></label>
-          <input class="form__phone-input" id="phone-field" type="tel" name="user-phone" placeholder="+7xxx xx xx*">
+          <label class="form__label" for="phone-field"></label>
+          <input class="form__input form__input--phone" id="phone-field" type="tel" name="user-phone" placeholder="+7xxx xx xx*">
         </fieldset>
         <fieldset class="form__block">
           <legend class="form__title">E-mail</legend>
-          <label class="form__email-label" for="email-field"></label>
-          <input class="form__email-input" id="email-field" type="email" name="user-email" placeholder="Ваш Email*">
+          <label class="form__label" for="email-field"></label>
+          <input class="form__input form__input--email" id="email-field" type="email" name="user-email" placeholder="Ваш Email*">
         </fieldset>
         <fieldset class="form__block">
           <legend class="form__title">Доп</legend>

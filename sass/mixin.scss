@@ -1,18 +1,6 @@
-@mixin second-title {
+%second-title {
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
   margin: 0;
-}
-@mixin form-label-tool {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-}
-@mixin form-input-tool {
-  color: $dark-grey;
-  font-size: 17px;
-  line-height: 18px;
-  border: none;
-  border-bottom: 2px solid #000;
 }
