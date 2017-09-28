@@ -3,9 +3,11 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .product__title {
   @extend %second-title;
 }
+
 .product__promo-title {
   font-weight: bold;
   font-size: 17px;
@@ -13,16 +15,19 @@
   color: $secondary-color;
   text-transform: uppercase;
 }
+
 .product__description {
   font-size: 15px;
   line-height: 24px;
   color: $primary-color;
 }
+
 .product__list {
   font-size: 15px;
   line-height: 20px;
   color: $primary-color;
 }
+
 .product__price {
   font-weight: bold;
   font-size: 17px;
