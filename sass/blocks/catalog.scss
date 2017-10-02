@@ -1,8 +1,39 @@
+.catalog {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .catalog__title {
   padding-bottom: 70px;
   padding-top: 70px;
   font-size: 27px;
   line-height: 30px;
   background-color: #f1f1f1;
-  padding-left: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 768px;
+  }
+
+  .catalog__title {
+    margin-top: -55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1050px;
+    margin-bottom: 50px;
+  }
+
+  .catalog__content {
+    display: flex;
+  }
+
+  .catalog__title {
+    width: 100%;
+  }
 }

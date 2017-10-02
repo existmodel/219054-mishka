@@ -6,7 +6,6 @@
 
 .item-card__title {
   font-size: 17px;
-  line-height: 24px;
 }
 
 .item-card__features {
@@ -15,7 +14,41 @@
   color: $primary-color;
 }
 
-.item-card__price {
-  font-size: 15px;
-  line-height: 24px;
+@media (min-width: $tablet-width) {
+  .item-card {
+    display: flex;
+    padding: 0;
+    min-height: 330px;
+    width: 668px;
+    justify-content: space-between;
+    margin: 50px;
+  }
+
+  .item-card__wrapper-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .item-card__wrapper-down {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item-card {
+    width: 320px;
+    flex-direction: column;
+    margin: 0;
+    margin-right: 50px;
+    margin-top: 50px;
+    min-height: 660px;
+  }
+
+  .item-card__wrapper-down {
+    width: 300px;
+  }
 }

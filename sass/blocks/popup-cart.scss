@@ -1,6 +1,15 @@
+.popup-cart {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+
 .popup-cart__title {
-  @extend %second-title;
+  @include second-title;
   text-transform: uppercase;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .popup-cart-form__content {
@@ -8,7 +17,6 @@
 }
 
 .popup-cart-form__title {
-  font-size: 15px;
   line-height: 30px;
   color: $primary-color;
 }
@@ -24,4 +32,10 @@
   background-color: $secondary-color;
   border: 1px solid $secondary-color;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-cart {
+    width: 570px;
+  }
 }

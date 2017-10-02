@@ -1,0 +1,9 @@
+.slider__list {
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__list {
+    display: flex;
+  }
+}

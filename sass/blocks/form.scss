@@ -32,13 +32,18 @@
 }
 
 .form__input {
+  width: 100%;
   color: $primary-color;
   font-size: 17px;
   line-height: 18px;
   border: none;
   border-bottom: 2px solid #000000;
-  width: 100%;
   margin-bottom: 10px;
+}
+
+.form__wrapper-color {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__textarea {
@@ -56,4 +61,122 @@
 
 .form__button {
   background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 0;
+  }
+
+  .form__block {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+
+  .form__wrapper-color {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+
+  .form__wrapper-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+  }
+
+  .form__label {
+    margin-bottom: 40px;
+  }
+
+  .form__block--bg {
+    background-color: #f1f1f1;
+  }
+
+  .form__label--size {
+    width: 200px;
+  }
+
+  .form__wrapper-fullname {
+    width: 500px;
+    padding-right: 50px;
+  }
+
+  .form__input {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .form__input--name {
+    margin-left: 50px;
+    width: 400px;
+  }
+
+  .form__input--surname,
+  .form__input--patronymic {
+    margin-left: 90px;
+    width: 310px;
+  }
+
+  .form__input--phone,
+  .form__input--email {
+    width: 500px;
+    padding-top: 20px;
+    margin-right: 50px;
+    background-color: #f1f1f1;
+  }
+
+  .form__textarea {
+    width: 500px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__button {
+    width: 230px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper-color {
+    width: 738px;
+  }
+
+  .form__wrapper-radio {
+    width: 738px;
+  }
+
+  .form__wrapper-fullname {
+    width: 738px;
+  }
+
+  .form__input--name {
+    width: 630px;
+    margin-left: 20px;
+  }
+
+  .form__input--surname,
+  .form__input--patronymic {
+    margin-left: 30px;
+    width: 570px;
+  }
+
+  .form__input--phone,
+  .form__input--email {
+    width: 700px;
+  }
+
+  .form__textarea {
+    width: 700px;
+  }
 }

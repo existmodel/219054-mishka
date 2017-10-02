@@ -1,20 +1,21 @@
 .profile {
-  margin-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .profile__title {
-  @extend %second-title;
+  @include second-title;
+  padding-bottom: 60px;
 }
 
 .profile__list {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
+  @include list-reset;
 }
 
 .profile__item {
+  width: 250px;
   position: relative;
   font-weight: bold;
   font-size: 17px;
@@ -23,5 +24,53 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .profile {
+    width: 768px;
+    padding-left: 50px;
+    margin-bottom: 70px;
+  }
+
+  .profile__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .profile__item {
+    padding-right: 100px;
+  }
+
+  .profile__item--love {
+    order: 2;
+  }
+
+  .profile__item--price {
+    order: 3;
+  }
+
+  .profile__item--patriotism {
+    order: 4;
+  }
+
+  .profile__item--likes {
+    order: 5;
+  }
+
+  .profile__item--gift {
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    width: 750px;
+  }
+
+  .profile__title {
+    @include second-title-desktop;
+    padding-bottom: 60px;
   }
 }

@@ -1,3 +1,9 @@
+
+.category {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .category__decor {
   background-color: $secondary-color;
   padding-bottom: 20px;
@@ -19,4 +25,34 @@
 
 .category__title-link {
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .category {
+    display: flex;
+    width: 768px;
+    margin-top: -40px;
+    margin-bottom: 100px;
+  }
+
+  .category__decor {
+    margin-left: 50px;
+    width: 335px;
+  }
+
+  .category__toys {
+    margin-right: 50px;
+    width: 335px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category {
+    width: 1050px;
+  }
+
+  .category__toys,
+  .category__decor {
+    width: 525px;
+  }
 }
