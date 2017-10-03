@@ -29,6 +29,11 @@
   color: $primary-color;
 }
 
+.contacts__map-img {
+  width: 322px;
+  height: 457px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     width: 768px;

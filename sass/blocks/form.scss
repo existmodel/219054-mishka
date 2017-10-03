@@ -37,7 +37,7 @@
   font-size: 17px;
   line-height: 18px;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid $black;
   margin-bottom: 10px;
 }
 
@@ -73,6 +73,10 @@
     justify-content: space-between;
     padding-left: 50px;
     padding-top: 50px;
+
+    &--bg {
+      background-color: $greyf1;
+    }
   }
 
   .form__wrapper-color {
@@ -91,14 +95,10 @@
 
   .form__label {
     margin-bottom: 40px;
-  }
 
-  .form__block--bg {
-    background-color: #f1f1f1;
-  }
-
-  .form__label--size {
-    width: 200px;
+    &--size {
+      width: 200px;
+    }
   }
 
   .form__wrapper-fullname {
@@ -109,25 +109,25 @@
   .form__input {
     padding-bottom: 10px;
     margin-bottom: 20px;
-  }
 
-  .form__input--name {
-    margin-left: 50px;
-    width: 400px;
-  }
+    &--name {
+      margin-left: 50px;
+      width: 400px;
+    }
 
-  .form__input--surname,
-  .form__input--patronymic {
-    margin-left: 90px;
-    width: 310px;
-  }
+    &--surname,
+    &--patronymic {
+      margin-left: 90px;
+      width: 310px;
+    }
 
-  .form__input--phone,
-  .form__input--email {
-    width: 500px;
-    padding-top: 20px;
-    margin-right: 50px;
-    background-color: #f1f1f1;
+    &--phone,
+    &--email {
+      width: 500px;
+      padding-top: 20px;
+      margin-right: 50px;
+      background-color: $greyf1;
+    }
   }
 
   .form__textarea {
@@ -160,20 +160,22 @@
     width: 738px;
   }
 
-  .form__input--name {
-    width: 630px;
-    margin-left: 20px;
-  }
+  .form__input {
+    &--name {
+      width: 630px;
+      margin-left: 20px;
+    }
 
-  .form__input--surname,
-  .form__input--patronymic {
-    margin-left: 30px;
-    width: 570px;
-  }
+    &--surname,
+    &--patronymic {
+      margin-left: 30px;
+      width: 570px;
+    }
 
-  .form__input--phone,
-  .form__input--email {
-    width: 700px;
+    &--phone,
+    &--email {
+      width: 700px;
+    }
   }
 
   .form__textarea {

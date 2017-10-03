@@ -1,5 +1,5 @@
 .item-card {
-  border: 1px solid #ededed;
+  border: 1px solid $greyed;
   padding: 20px;
   margin: 20px;
 }
@@ -12,6 +12,11 @@
   font-size: 13px;
   line-height: 30px;
   color: $primary-color;
+}
+
+.item-card__img {
+  width: 260px;
+  height: 195px;
 }
 
 @media (min-width: $tablet-width) {

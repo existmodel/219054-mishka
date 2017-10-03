@@ -40,27 +40,27 @@
   }
 
   .profile__item {
-    padding-right: 100px;
-  }
+    padding-right: 20px;
 
-  .profile__item--love {
-    order: 2;
-  }
+    &--love {
+      order: 2;
+    }
 
-  .profile__item--price {
-    order: 3;
-  }
+    &--price {
+      order: 3;
+    }
 
-  .profile__item--patriotism {
-    order: 4;
-  }
+    &--patriotism {
+      order: 4;
+    }
 
-  .profile__item--likes {
-    order: 5;
-  }
+    &--likes {
+      order: 5;
+    }
 
-  .profile__item--gift {
-    order: 6;
+    &--gift {
+      order: 6;
+    }
   }
 }
 

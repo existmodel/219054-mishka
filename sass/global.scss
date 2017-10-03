@@ -1,4 +1,4 @@
-html {
+* {
   box-sizing: border-box;
 }
 
@@ -9,6 +9,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  box-sizing: content-box;
 }
 
 body {
