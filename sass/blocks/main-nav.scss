@@ -1,15 +1,172 @@
 .main-nav {
   // display: none;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background-color: $black;
+  border: none;
 }
 
 .main-nav__list {
-  list-style-type: none;
+  @include list-reset;
 }
 
 .main-nav__link {
-  color: #000000;
+  color: $black;
   font-family: $font-stack;
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
+}
+
+.main-nav__item {
+  padding: 15px;
+  border-bottom: 1px solid $greyec;
+
+  &--mobile {
+    display: none;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .main-nav__item {
+    &--mobile {
+      display: inline-block;
+    }
+
+    &--logo {
+      width: 240px;
+      border: 1px solid $greyec;
+      padding-left: 50px;
+    }
+
+    &--catalog {
+      order: 3;
+      border: none;
+      padding-left: 50px;
+    }
+
+    &--form {
+      order: 4;
+      padding-right: 100px;
+      border: none;
+    }
+
+    &--cart {
+      order: 2;
+      width: 300px;
+    }
+
+    &--delivery {
+      order: 5;
+      border: none;
+    }
+  }
+
+  .main-nav__item--search {
+    width: 80px;
+    border-right: 1px solid $greyec;
+    // font-size: 0;
+    position: relative;
+    order: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      background: transparent url("../img/icon-search.svg") no-repeat;
+    }
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__link--search {
+    font-size: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1050px;
+  }
+
+  .main-nav__item {
+    &--logo {
+      order: 3;
+      border-left: 0;
+      width: 160px;
+    }
+
+    &--catalog {
+      order: 1;
+      padding-left: 15px;
+      border-right: 1px solid $greyec;
+      border-bottom: 1px solid $greyec;
+      width: 235px;
+    }
+
+    &--form {
+      order: 2;
+      padding-right: 0;
+      border-bottom: 1px solid $greyec;
+    }
+
+    &--cart {
+      order: 5;
+      width: 300px;
+      text-align: right;
+    }
+
+    &--delivery {
+      order: 8;
+      border: none;
+    }
+
+    &--hidden {
+      display: inline-block;
+    }
+
+    &--search {
+      order: 4;
+    }
+
+    &--new {
+      order: 6;
+      border: none;
+    }
+
+    &--sale {
+      order: 7;
+      border: none;
+      padding-right: 450px;
+    }
+  }
 }

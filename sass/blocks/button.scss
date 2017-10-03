@@ -1,4 +1,9 @@
 .button {
+  display: inline-block;
+  width: 260px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 0;
   font-size: 18px;
   line-height: 20px;
   color: $primary-color;

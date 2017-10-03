@@ -1,4 +1,4 @@
-html {
+* {
   box-sizing: border-box;
 }
 
@@ -9,9 +9,16 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  box-sizing: content-box;
 }
 
 body {
-  font-family: $font-stack;
-  margin: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  font: $regular-font-weight 15px/24px $font-stack;
+  // font: bold 27px/30px "Open Sans", "Arial", sans-serif;
+  // font-size: 15px;
+  // font-family: $font-stack;
+  // line-height: $main-line-height;
+  // font-weight: $regular-font-weight;
 }

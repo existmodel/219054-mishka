@@ -1,5 +1,22 @@
+.copyright {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .copyright__text {
   font-size: 19px;
-  line-height: 18px;
-  font-weight: normal;
+  line-height: 19px;
+  font-weight: bold;
+}
+
+.copyright__link {
+  // font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 200px;
+    margin-right: 0;
+  }
 }
