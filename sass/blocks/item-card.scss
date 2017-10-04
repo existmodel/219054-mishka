@@ -29,6 +29,18 @@
     margin: 50px;
   }
 
+  .item-card__title {
+    font-size: 20px;
+  }
+
+  .item-card__price {
+    font-size: 17px;
+  }
+
+  .item-card__features {
+    font-size: $main-font-size;
+  }
+
   .item-card__wrapper-description {
     display: flex;
     flex-direction: column;

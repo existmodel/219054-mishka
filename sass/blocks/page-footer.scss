@@ -12,8 +12,7 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     width: 768px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 50px;
   }
 
   .page-footer__logo {
@@ -30,6 +29,6 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    width: 1050px;
+    width: 1150px;
   }
 }

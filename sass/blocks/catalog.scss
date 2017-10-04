@@ -20,12 +20,14 @@
 
   .catalog__title {
     margin-top: -55px;
+    @include second-title-tablet;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
-    width: 1050px;
+    width: 1150px;
+    padding: 0 50px;
     margin-bottom: 50px;
   }
 
@@ -34,6 +36,6 @@
   }
 
   .catalog__title {
-    width: 100%;
+    @include second-title-desktop;
   }
 }

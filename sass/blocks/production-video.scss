@@ -34,6 +34,7 @@
 
   .production-video__title {
     order: 2;
+    font-size: 20px;
   }
 
   .production-video__order {
@@ -47,6 +48,7 @@
 
   .production-video__description {
     order: 3;
+    font-size: $main-font-size;
   }
 
   .production-video__description-video {
@@ -56,7 +58,7 @@
 
 @media (min-width: $desktop-width) {
   .production-video {
-    width: 1050px;
+    width: 1150px;
     margin-bottom: 70px;
   }
 

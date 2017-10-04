@@ -37,6 +37,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     width: 768px;
+    font-size: 17px;
   }
 
   .contacts__wrapper {
@@ -46,7 +47,6 @@
 
   .contacts__adress {
     width: 300px;
-    // padding-left: 60px;
   }
 
   .contacts__content--button-center {
@@ -54,11 +54,14 @@
     justify-content: center;
     padding: 50px 0;
   }
+  .contacts__title {
+    @include second-title-tablet;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    width: 1050px;
+    width: 1150px;
     display: flex;
     flex-wrap: wrap;
     padding-left: 140px;

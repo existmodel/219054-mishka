@@ -1,5 +1,11 @@
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 a {
@@ -15,10 +21,22 @@ img {
 body {
   margin: 0 auto;
   min-width: 320px;
-  font: $regular-font-weight 15px/24px $font-stack;
-  // font: bold 27px/30px "Open Sans", "Arial", sans-serif;
-  // font-size: 15px;
-  // font-family: $font-stack;
-  // line-height: $main-line-height;
-  // font-weight: $regular-font-weight;
+  font: $regular-font-weight #{$main-font-size}/#{$main-line-height} $font-stack;
+}
+
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

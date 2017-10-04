@@ -10,31 +10,32 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__content">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--logo">
-              <a class="page-header__logo" href="index.html">
-                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Mishka"
-              </a>
-            </li>
+        <div class="main-nav__item main-nav__item--logo">
+          <a class="page-header__logo" href="index.html"><img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Mishka"</a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
+          <ul class="main-nav__list main-nav__list--shop">
             <li class="main-nav__item main-nav__item--catalog">
               <a class="main-nav__link" href="#">Каталог товаров</a>
             </li>
             <li class="main-nav__item main-nav__item--form">
               <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--user">
             <li class="main-nav__item main-nav__item--search">
               <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--cart">
               <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--news">
             <li class="main-nav__item main-nav__item--hidden main-nav__item--new">
-              <a class="main-nav__link" href="#">Новые поступления</a>
+              <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
             </li>
             <li class="main-nav__item main-nav__item--hidden main-nav__item--sale">
-              <a class="main-nav__link" href="#">Распродажа</a>
+              <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
             </li>
             <li class="main-nav__item main-nav__item--mobile main-nav__item--delivery">
               Бесплатная доставка по России

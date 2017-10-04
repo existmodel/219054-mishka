@@ -41,6 +41,8 @@
 
   .profile__item {
     padding-right: 20px;
+    font-size: 20px;
+    line-height: 22px;
 
     &--love {
       order: 2;
@@ -61,6 +63,9 @@
     &--gift {
       order: 6;
     }
+  }
+  .profile__title {
+    @include second-title-tablet;
   }
 }
 

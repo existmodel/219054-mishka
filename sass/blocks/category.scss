@@ -18,7 +18,6 @@
 
 .category__title {
   font-size: 19px;
-  line-height: 24px;
   font-weight: bold;
   padding-left: 30px;
 }
@@ -35,6 +34,10 @@
     margin-bottom: 100px;
   }
 
+  .category__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
   .category__decor {
     margin-left: 50px;
     width: 335px;
@@ -48,7 +51,7 @@
 
 @media (min-width: $desktop-width) {
   .category {
-    width: 1050px;
+    width: 1150px;
   }
 
   .category__toys,

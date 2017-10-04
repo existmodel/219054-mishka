@@ -77,6 +77,9 @@
     &--bg {
       background-color: $greyf1;
     }
+    &--fix {
+      margin-bottom: 0;
+    }
   }
 
   .form__wrapper-color {
@@ -95,6 +98,8 @@
 
   .form__label {
     margin-bottom: 40px;
+    font-size: 19px;
+    line-height: 19px;
 
     &--size {
       width: 200px;
@@ -109,6 +114,8 @@
   .form__input {
     padding-bottom: 10px;
     margin-bottom: 20px;
+    font-size: 19px;
+    line-height: 19px;
 
     &--name {
       margin-left: 50px;
@@ -118,7 +125,7 @@
     &--surname,
     &--patronymic {
       margin-left: 90px;
-      width: 310px;
+      width: 350px;
     }
 
     &--phone,
@@ -134,11 +141,20 @@
     width: 500px;
     margin-right: 50px;
     margin-bottom: 40px;
+    font-size: 19px;
+    line-height: 19px
   }
 
   .form__button-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .form__legend {
+    order: 1;
+    margin-right: 50px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .form__button {
@@ -169,7 +185,7 @@
     &--surname,
     &--patronymic {
       margin-left: 30px;
-      width: 570px;
+      width: 620px;
     }
 
     &--phone,
