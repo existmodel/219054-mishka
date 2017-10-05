@@ -3,12 +3,13 @@
   width: 320px;
   margin: 0 auto;
   display: flex;
-  text-align: center;
+  justify-content: center;
+  align-items: baseline;
   padding-bottom: 20px;
 }
 
-.social__item {
-  // font-size: 0;
+.social__link--facebook {
+  padding: 0 40px;
 }
 
 @media (min-width: $tablet-width) {

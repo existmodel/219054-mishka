@@ -1,8 +1,7 @@
 .product {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
   padding-left: 30px;
-  padding-right: 30px;
   width: 320px;
 }
 
@@ -18,18 +17,33 @@
   color: $secondary-color;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .product__description {
   color: $primary-color;
   width: 250px;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .product__list {
   line-height: 20px;
   color: $primary-color;
+  border-collapse: collapse;
+  margin-bottom: 28px;
+}
+
+.product__list-line {
+  border-bottom: 1px solid $greyec;
+}
+
+.product__parameter {
+  padding: 10px 25px 10px 0px;
+}
+
+.product__value {
+  padding: 10px 25px 10px 0px;
 }
 
 .product__img {
@@ -40,10 +54,12 @@
 
 .product__price {
   display: block;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   font-weight: bold;
   font-size: 17px;
   color: $primary-color;
+  padding-right: 30px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -109,7 +125,7 @@
   }
 
   .product__list {
-    padding-left: 160px;
+    margin-left: 160px;
   }
 
   .product__price {

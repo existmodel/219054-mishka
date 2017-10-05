@@ -1,11 +1,12 @@
 .page-form__title {
-  padding-bottom: 70px;
+  padding-bottom: 75px;
   padding-top: 70px;
   font-size: 27px;
   line-height: 30px;
   background-color: $greyf1;
   text-align: center;
-  margin-top: -55px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .page-form__slogan {
@@ -13,6 +14,8 @@
   color: $primary-color;
   padding-left: 30px;
   padding-right: 30px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .page-form {
@@ -27,6 +30,7 @@
 
   .page-form__title {
     @include second-title-tablet;
+    margin-top: -55px;
   }
 
   .page-form__slogan {

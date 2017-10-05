@@ -3,11 +3,12 @@
   padding-right: 30px;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 55px;
 }
 
 .profile__title {
   @include second-title;
-  padding-bottom: 60px;
+  padding-bottom: 85px;
 }
 
 .profile__list {
@@ -20,7 +21,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 83px;
 
   &:last-child {
     margin-bottom: 0;

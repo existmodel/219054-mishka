@@ -1,22 +1,43 @@
 .item-card {
   border: 1px solid $greyed;
-  padding: 20px;
-  margin: 20px;
+  margin: 0 30px 30px 30px;
 }
 
 .item-card__title {
   font-size: 17px;
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 .item-card__features {
   font-size: 13px;
   line-height: 30px;
   color: $primary-color;
+  margin: 0;
 }
 
 .item-card__img {
   width: 260px;
   height: 195px;
+  padding-bottom: 20px;
+}
+
+.item-card__wrapper-description {
+  padding: 0 30px 25px 30px;
+}
+
+.item-card__wrapper-down {
+  display: flex;
+  padding-top: 20px;
+}
+
+.item-card__wrapper-up {
+  border-bottom: 1px solid $greyec;
+  padding-bottom: 20px;
+}
+
+.item-card__add-button {
+  margin-left: auto;
 }
 
 @media (min-width: $tablet-width) {
