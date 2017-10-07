@@ -8,12 +8,12 @@
   height: 36px;
   padding-top: 12px;
 }
+
 .page-header__title {
   text-align: center;
   font: bold 27px/30px $font-stack;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  // background-size: cover;
   background-position: center 0;
   padding-bottom: 122px;
   padding-top: 70px;
@@ -28,10 +28,12 @@
   }
 
   .page-header__title {
-    padding-bottom: 300px;
+    padding-bottom: 415px;
     margin-top: -55px;
+
     @include second-title-tablet;
     background-size: cover;
+    padding-top: 155px;
   }
 }
 
@@ -43,6 +45,7 @@
   .page-header__title {
     padding-bottom: 400px;
     margin-top: -55px;
+
     @include second-title-desktop;
     width: 1150px;
   }

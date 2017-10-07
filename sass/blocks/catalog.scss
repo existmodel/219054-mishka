@@ -22,22 +22,28 @@
 
   .catalog__title {
     margin-top: -55px;
+
     @include second-title-tablet;
+    padding-top: 95px;
+    margin-bottom: 105px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
     width: 1150px;
-    padding: 0 50px;
     margin-bottom: 50px;
   }
 
   .catalog__content {
+    width: 1050px;
     display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .catalog__title {
     @include second-title-desktop;
+    margin-bottom: 155px;
   }
 }

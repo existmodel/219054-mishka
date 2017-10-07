@@ -39,11 +39,11 @@
 }
 
 .product__parameter {
-  padding: 10px 25px 10px 0px;
+  padding: 10px 25px 10px 0;
 }
 
 .product__value {
-  padding: 10px 25px 10px 0px;
+  padding: 10px 25px 10px 0;
 }
 
 .product__img {
@@ -67,7 +67,7 @@
     width: 768px;
     padding-left: 50px;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
 
   .product__img {
@@ -79,38 +79,53 @@
   .product__title {
     @include second-title-tablet;
     display: inline-block;
-    padding-right: 50px;
+    padding-right: 140px;
+    padding-bottom: 45px;
   }
 
   .product__promo-title {
     display: inline-block;
+    width: 70px;
+    text-align: center;
+    padding-top: 40px;
   }
 
   .product__description {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     font-size: 17px;
     line-height: 30px;
+    width: 300px;
   }
 
   .product__list {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
+
   .product__price {
-    font-size: 20px ;
+    font-size: 20px;
     line-height: $main-line-height;
+    text-align: left;
+    padding-left: 70px;
+    padding-bottom: 35px;
+  }
+
+  .product__order {
+    width: 290px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product {
     width: 1150px;
+    margin-bottom: 160px;
   }
 
   .product__promo-title {
     display: block;
-    margin-top: -40px;
+    margin-top: -130px;
     width: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    margin-left: 50px;
   }
 
   .product__title {
@@ -120,19 +135,21 @@
   }
 
   .product__description {
-    margin-left: 160px;
+    margin-left: 175px;
     width: 285px;
+    margin-bottom: 50px;
   }
 
   .product__list {
-    margin-left: 160px;
+    margin-left: 175px;
   }
 
   .product__price {
-    padding-left: 160px;
+    padding-left: 175px;
+    padding-bottom: 85px;
   }
 
   .product__order {
-    margin-left: 160px;
+    margin-left: 175px;
   }
 }

@@ -17,6 +17,7 @@
   font-weight: bold;
   margin: 0;
   padding-bottom: 35px;
+
   &--padding-small {
     padding: 0;
     padding-bottom: 5px;
@@ -30,24 +31,27 @@
   padding-left: 62px;
   padding-bottom: 20px;
   display: block;
+
   &--name {
     padding: 0 0 10px 0;
   }
+
   &--surname {
     padding: 0 0 10px 0;
   }
+
   &--patronymic {
     padding: 0 0 10px 0;
   }
 }
 
 .form__label--size {
-    padding-bottom: 42px;
-    &:last-child {
-      padding-bottom: 10px;
-    }
-  }
+  padding-bottom: 42px;
 
+  &:last-child {
+    padding-bottom: 10px;
+  }
+}
 
 .form__radio,
 .form__checkbox {
@@ -61,16 +65,17 @@
   line-height: 18px;
   border: none;
   border-bottom: 2px solid $black;
-  // margin-bottom: 10px;
 
   &--name {
     padding-bottom: 15px;
     margin-bottom: 25px;
   }
+
   &--surname {
     padding-bottom: 15px;
     margin-bottom: 25px;
   }
+
   &--patronymic {
     padding-bottom: 15px;
   }
@@ -82,7 +87,7 @@
 
   &--email {
     padding-bottom: 15px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -90,7 +95,6 @@
   display: flex;
   flex-direction: column;
 }
-
 
 .form__textarea {
   padding: 14px 17px;
@@ -125,30 +129,45 @@
 
   .form__block {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-left: 50px;
     padding-top: 50px;
+    margin-bottom: 0;
 
     &--bg {
       background-color: $greyf1;
     }
+
     &--fix {
       margin-bottom: 0;
     }
   }
 
+  .form__title {
+    width: 170px;
+  }
+
+  .form__block-color {
+    padding-top: 75px;
+  }
+
+
   .form__wrapper-color {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 400px;
+    justify-content: space-between;
+    width: 500px;
+    margin-bottom: 20px;
   }
 
   .form__wrapper-radio {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 400px;
+    width: 500px;
+  }
+
+  .form__wrapper-email {
+    width: 500px;
+    position: relative;
   }
 
   .form__label {
@@ -156,14 +175,45 @@
     font-size: 19px;
     line-height: 19px;
 
-    &--size {
-      width: 200px;
+    &--name {
+      margin: 0;
+    }
+
+    &--surname {
+      margin: 0;
+    }
+
+    &--patronymic {
+      margin: 0;
+    }
+
+    &--phone {
+      position: absolute;
+      top: 0;
+      right: 60px;
+    }
+
+    &--email {
+      position: absolute;
+      top: 0;
+      right: 10px;
     }
   }
+
+
+  .form__label--size {
+    width: 200px;
+    padding-bottom: 15px;
+  }
+
 
   .form__wrapper-fullname {
     width: 500px;
     padding-right: 50px;
+  }
+
+  .form__wrapper-phone {
+    position: relative;
   }
 
   .form__input {
@@ -174,13 +224,11 @@
 
     &--name {
       margin-left: 50px;
-      width: 400px;
     }
 
     &--surname,
     &--patronymic {
       margin-left: 90px;
-      width: 350px;
     }
 
     &--phone,
@@ -195,9 +243,10 @@
   .form__textarea {
     width: 500px;
     margin-right: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-size: 19px;
-    line-height: 19px
+    line-height: 19px;
+    margin-top: -15px;
   }
 
   .form__button-wrapper {
@@ -220,36 +269,95 @@
 
 @media (min-width: $desktop-width) {
   .form__wrapper-color {
-    width: 738px;
+    width: 700px;
   }
 
   .form__wrapper-radio {
-    width: 738px;
+    width: 700px;
   }
 
   .form__wrapper-fullname {
-    width: 738px;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
   }
+
+  .form__label {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    padding-left: 83px;
+
+    &--name {
+      padding-left: 0;
+      width: 60px;
+    }
+
+    &--surname {
+      padding-left: 0;
+      width: 60px;
+    }
+
+    &--patronymic {
+      padding-left: 0;
+      width: 60px;
+    }
+  }
+
 
   .form__input {
     &--name {
       width: 630px;
-      margin-left: 20px;
+      margin-left: 0;
+      margin-bottom: 40px;
     }
 
     &--surname,
     &--patronymic {
-      margin-left: 30px;
-      width: 620px;
+      width: 580px;
+      margin-left: 50px;
+      margin-bottom: 40px;
     }
 
     &--phone,
     &--email {
       width: 700px;
+      margin-left: 0;
+      padding: 0;
+      padding-bottom: 15px;
     }
   }
 
   .form__textarea {
     width: 700px;
+    margin-bottom: 40px;
+  }
+
+  .form__block {
+    padding-top: 70px;
+  }
+
+  .form__title {
+    text-align: center;
+  }
+
+  .form__block--email {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .form__button-wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .form__button {
+    width: 230px;
+    margin: 0;
+  }
+
+  .form__legend {
+    margin: 0;
   }
 }

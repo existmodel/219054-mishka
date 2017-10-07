@@ -16,12 +16,12 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     width: 768px;
-    padding: 50px 50px;
+    padding: 30px 50px;
   }
 
   .page-footer__logo {
-    display: inline-block;
-    padding-left: 50px;
+    display: block;
+    width: 180px;
   }
 
   .page-footer__content {

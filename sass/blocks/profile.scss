@@ -16,12 +16,12 @@
 }
 
 .profile__item {
-  width: 250px;
+  // width: 250px;
   position: relative;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  margin-bottom: 83px;
+  margin-bottom: 110px;
 
   &:last-child {
     margin-bottom: 0;
@@ -32,12 +32,13 @@
   .profile {
     width: 768px;
     padding-left: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 160px;
   }
 
   .profile__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .profile__item {
@@ -47,6 +48,7 @@
 
     &--love {
       order: 2;
+      padding-right: 105px;
     }
 
     &--price {
@@ -55,28 +57,35 @@
 
     &--patriotism {
       order: 4;
+      padding-right: 60px;
     }
 
     &--likes {
       order: 5;
+      margin-bottom: 0;
     }
 
     &--gift {
       order: 6;
+      padding-right: 120px;
     }
   }
+
   .profile__title {
     @include second-title-tablet;
+    padding-bottom: 100px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .profile {
-    width: 750px;
+    width: 1050px;
+    padding-left: 175px;
+    padding-right: 175px;
   }
 
   .profile__title {
     @include second-title-desktop;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
   }
 }
