@@ -25,6 +25,7 @@
 }
 
 .form__label {
+  position: relative;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -44,6 +45,26 @@
     padding: 0 0 10px 0;
   }
 }
+
+.form__label-radio {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid $black;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}
+
+// .form__radio:checked .form__label-radio {
+//   &::after {
+
+//   }
+// }
 
 .form__label--size {
   padding-bottom: 42px;
