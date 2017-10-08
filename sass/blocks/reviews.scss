@@ -1,6 +1,6 @@
 .reviews {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 88px;
   padding-left: 30px;
   padding-right: 30px;
   width: 320px;
@@ -8,10 +8,11 @@
 
 .reviews__title {
   @include second-title;
+  padding-bottom: 25px;
 }
 
 .reviews__list {
-  margin-bottom: 30px;
+  margin-bottom: 55px;
 }
 
 .reviews__text {
@@ -19,10 +20,12 @@
   line-height: 30px;
   color: $primary-color;
   margin: 0;
+  padding-bottom: 25px;
 }
 
 .reviews__item {
   margin: 0;
+  padding-bottom: 40px;
 }
 
 .reviews__author-name {
@@ -47,13 +50,14 @@
   .reviews {
     width: 768px;
     padding-left: 50px;
+    padding-right: 50px;
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 
     &::before {
       content: "";
       position: absolute;
-      top: -60px;
+      top: -75px;
       left: 0;
       background-image: url("../img/review@1x.jpg");
       background-color: $greyed;
@@ -66,19 +70,20 @@
 
   .reviews__text {
     width: 645px;
-    padding-bottom: 50px;
+    padding-bottom: 55px;
     font-size: 17px;
-    padding-top: 50px;
+    padding-top: 55px;
   }
 
   .reviews__author-name {
     display: block;
+    font-size: 18px;
   }
 
   .reviews__title {
-    padding-bottom: 50px;
-    font-size: 43px;
-    line-height: 50px;
+    padding-bottom: 35px;
+
+    @include second-title-tablet;
     order: 1;
   }
 
@@ -95,13 +100,15 @@
   }
 
   .reviews__prev {
-    margin-left: auto;
-    align-self: flex-end;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
   }
 
   .reviews__next {
-    text-align: right;
-    align-self: flex-end;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
   }
 
   .reviews__list {
@@ -111,7 +118,10 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 880px;
+    width: 1050px;
+    padding: 0;
+    padding-left: 175px;
+    margin-bottom: 230px;
 
     &::before {
       left: -80px;
@@ -124,5 +134,10 @@
 
   .reviews__write {
     margin-top: -90px;
+  }
+
+  .reviews__text {
+    width: 760px;
+    padding-bottom: 0;
   }
 }

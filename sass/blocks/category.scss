@@ -6,21 +6,21 @@
 
 .category__decor {
   background-color: $secondary-color;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-top: 25px;
 }
 
 .category__toys {
   background-color: #56c3b2;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-top: 25px;
 }
 
 .category__title {
   font-size: 19px;
-  line-height: 24px;
   font-weight: bold;
   padding-left: 30px;
+  margin: 0;
 }
 
 .category__title-link {
@@ -30,29 +30,31 @@
 @media (min-width: $tablet-width) {
   .category {
     display: flex;
-    width: 768px;
+    width: 668px;
     margin-top: -40px;
-    margin-bottom: 100px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .category__title {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 35px;
   }
 
   .category__decor {
-    margin-left: 50px;
-    width: 335px;
+    flex-grow: 1;
   }
 
   .category__toys {
-    margin-right: 50px;
-    width: 335px;
+    flex-grow: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .category {
     width: 1050px;
-  }
-
-  .category__toys,
-  .category__decor {
-    width: 525px;
+    margin-bottom: 100px;
   }
 }
