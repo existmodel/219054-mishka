@@ -33,7 +33,7 @@
 }
 
 .item-card__wrapper-up {
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
 }
 
 .item-card__add-button {
@@ -47,6 +47,11 @@
     width: 668px;
     justify-content: space-between;
     margin: 50px;
+  }
+
+  .item-card__img {
+    height: 335px;
+    padding: 0;
   }
 
   .item-card__title {
@@ -73,14 +78,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  .item-card__wrapper-up {
-    padding-bottom: 170px;
-
-    &--padding-small {
-      padding-bottom: 145px;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -96,9 +93,10 @@
     padding-left: 25px;
     padding-right: 25px;
     width: 315px;
+    height: calc(100% - 195px);
   }
 
   .item-card__wrapper-up {
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
   }
 }

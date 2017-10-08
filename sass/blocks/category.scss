@@ -30,9 +30,11 @@
 @media (min-width: $tablet-width) {
   .category {
     display: flex;
-    width: 768px;
+    width: 668px;
     margin-top: -40px;
     margin-bottom: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .category__title {
@@ -42,24 +44,17 @@
   }
 
   .category__decor {
-    margin-left: 50px;
-    width: 335px;
+    flex-grow: 1;
   }
 
   .category__toys {
-    margin-right: 50px;
-    width: 335px;
+    flex-grow: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .category {
-    width: 1150px;
+    width: 1050px;
     margin-bottom: 100px;
-  }
-
-  .category__toys,
-  .category__decor {
-    width: 525px;
   }
 }

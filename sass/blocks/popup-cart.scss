@@ -34,8 +34,8 @@
   margin-bottom: 20px;
 }
 
-
 .popup-cart-form__label {
+  position: relative;
   font-size: 17px;
   line-height: 16px;
   color: $primary-color;
@@ -56,6 +56,19 @@
 
 .popup-cart-form__radio {
   display: none;
+}
+
+.popup-cart-form__radio:checked + .popup-cart-form__label {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 76px;
+    height: 46px;
+    top: -2px;
+    left: -2px;
+    border: 2px solid $aquamarine;
+    cursor: pointer;
+  }
 }
 
 .popup-cart__button {
