@@ -4,12 +4,12 @@
   width: 320px;
   margin: 0 auto;
   margin-bottom: 55px;
-  position:relative;
+  position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    width: 778px;
+    width: 320px;
     height: 7px;
     top: -35px;
     left: 0;
@@ -21,7 +21,6 @@
 .profile__title {
   @include second-title;
   padding-bottom: 25px;
-
 }
 
 .profile__list {
@@ -34,7 +33,6 @@
   font-size: 17px;
   line-height: 20px;
   margin-bottom: 35px;
-  position: relative;
 
   &:last-child {
     margin-bottom: 0;
@@ -75,6 +73,7 @@
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 65px;
+
     &--love {
       order: 2;
       padding-right: 105px;

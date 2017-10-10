@@ -16,11 +16,10 @@
   margin: 0;
 }
 
-// .item-card__img {
-//   // width: 260px;
-//   // height: 195px;
-//   padding-bottom: 20px;
-// }
+.item-card__img {
+  display: block;
+  padding-bottom: 20px;
+}
 
 .item-card__wrapper-description {
   padding: 0 30px 25px 30px;
