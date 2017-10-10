@@ -31,10 +31,23 @@
   .category {
     display: flex;
     width: 668px;
-    margin-top: -40px;
-    margin-bottom: 15px;
+    margin-top: -115px;
+    margin-bottom: 45px;
     margin-left: 50px;
     margin-right: 50px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 768px;
+      height: 20px;
+      top: 100px;
+      left: -50px;
+      background: transparent url("../img/bg-zigzag-fill.svg") repeat;
+      background-size: auto 20px;
+      z-index: 1;
+    }
   }
 
   .category__title {
@@ -56,5 +69,10 @@
   .category {
     width: 1050px;
     margin-bottom: 100px;
+
+    &::after {
+      width: 1150px;
+      background-size: auto;
+    }
   }
 }

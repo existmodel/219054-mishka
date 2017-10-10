@@ -13,8 +13,8 @@
 }
 
 .main-nav__logo-image {
-  width: 86px;
-  height: 36px;
+  // width: 86px;
+  // height: 36px;
   padding-top: 12px;
 }
 
@@ -107,7 +107,7 @@
     padding-left: 50px;
     text-align: left;
     // position: absolute;
-    padding-bottom: 33px;
+    // padding-bottom: 33px;
   }
 
   .main-nav__item {
@@ -186,6 +186,7 @@
   .main-nav__logo {
     width: 315px;
     order: 3;
+    padding-bottom: 0;
   }
 
   .main-nav__item {

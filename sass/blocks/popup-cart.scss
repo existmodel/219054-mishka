@@ -105,4 +105,10 @@
   .popup-cart__button {
     width: 350px;
   }
+
+  .popup-cart-form__radio:checked + .popup-cart-form__label {
+    &::after {
+      width: 108px;
+    }
+  }
 }
