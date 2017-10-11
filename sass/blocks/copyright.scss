@@ -1,32 +1,43 @@
 .copyright {
   width: 260px;
   margin: 0 auto;
-  text-align: center;
   border-top: 1px solid $greye5;
+  position: relative;
+  padding-top: 25px;
 }
 
 .copyright__text {
   font-size: 19px;
   line-height: 19px;
   font-weight: bold;
+  padding-left: 35px;
 }
 
-.copyright__link {
-  // font-size: 0;
+.copyright__icon {
+  position: absolute;
+  right: 35px;
+  top: 15px;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 180px;
-    border: 0;
+    border: none;
     margin: 0;
-    text-align: left;
+    padding-top: 10px;
+    // text-align: left;
   }
 
   .copyright__text {
     font-size: 19px;
     line-height: 19px;
     font-weight: bold;
-    vertical-align: top;
+    padding: 0;
+  }
+
+  .copyright__icon {
+    position: absolute;
+    right: -5px;
+    top: 0;
   }
 }

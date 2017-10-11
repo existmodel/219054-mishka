@@ -33,6 +33,20 @@
     margin-top: -55px;
     padding-top: 95px;
     margin-bottom: 75px;
+    position: relative;
+    z-index: -1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 768px;
+      height: 20px;
+      top: 210px;
+      left: 0;
+      background: transparent url("../img/bg-zigzag-fill.svg") repeat;
+      background-size: auto 20px;
+      z-index: 1;
+    }
   }
 
   .page-form__slogan {
@@ -50,7 +64,15 @@
 
   .page-form__title {
     @include second-title-desktop;
-    margin-bottom: 150px;
+    margin-bottom: 125px;
+    padding-bottom: 100px;
+
+    &::after {
+      width: 1150px;
+      height: 20px;
+      top: 235px;
+      background-size: auto;
+    }
   }
 
   .page-form__slogan {

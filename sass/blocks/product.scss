@@ -72,8 +72,10 @@
 
   .product__img {
     position: absolute;
-    top: 150px;
-    right: 100px;
+    width: 333px;
+    height: 404px;
+    top: 140px;
+    right: 45px;
   }
 
   .product__title {
@@ -132,6 +134,14 @@
     padding-left: 160px;
 
     @include second-title-desktop;
+  }
+
+  .product__img {
+    top: -30px;
+    right: 50px;
+    width: 525px;
+    height: 636px;
+    z-index: -1;
   }
 
   .product__description {
