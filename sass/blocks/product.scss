@@ -48,8 +48,7 @@
 
 .product__img {
   padding-bottom: 20px;
-  width: 260px;
-  height: 315px;
+  display: block;
 }
 
 .product__price {
@@ -72,8 +71,6 @@
 
   .product__img {
     position: absolute;
-    width: 333px;
-    height: 404px;
     top: 140px;
     right: 45px;
   }
@@ -139,8 +136,6 @@
   .product__img {
     top: -30px;
     right: 50px;
-    width: 525px;
-    height: 636px;
     z-index: -1;
   }
 

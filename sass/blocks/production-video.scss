@@ -43,6 +43,10 @@
   transform: translate(-50%, -50%);
 }
 
+.production-video__img {
+  display: block;
+}
+
 .production-video__order {
   width: 195px;
 }
@@ -108,7 +112,7 @@
 
   .production-video__movie {
     width: 685px;
-    height: 456px;
+    padding-bottom: 0;
   }
 
   .production-video__content {

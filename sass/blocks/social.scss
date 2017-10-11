@@ -8,8 +8,20 @@
   padding-bottom: 20px;
 }
 
+
 .social__link--facebook {
   padding: 0 40px;
+}
+
+.social__icon {
+  &:hover {
+    fill: $aquamarine;
+  }
+
+  &:active {
+    fill: $aquamarine;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

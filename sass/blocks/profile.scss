@@ -42,10 +42,7 @@
 .profile__icon {
   display: block;
   margin-bottom: 20px;
-
-  path {
-    fill: $aquamarine;
-  }
+  fill: $aquamarine;
 }
 
 @media (min-width: $tablet-width) {
