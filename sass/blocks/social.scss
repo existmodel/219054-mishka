@@ -15,11 +15,11 @@
 
 .social__icon {
   &:hover {
-    fill: $aquamarine;
+    fill: $secondary-color;
   }
 
   &:active {
-    fill: $aquamarine;
+    fill: $secondary-color;
     opacity: 0.3;
   }
 }

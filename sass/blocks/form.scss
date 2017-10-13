@@ -31,7 +31,7 @@
     height: 1px;
     top: 5px;
     left: 60px;
-    background-color: $aquamarine;
+    background-color: $secondary-color;
   }
 }
 
@@ -53,15 +53,18 @@
   cursor: pointer;
 
   &--name {
-    padding: 0 0 10px 0;
+    padding-left: 0;
+    padding-bottom: 10px;
   }
 
   &--surname {
-    padding: 0 0 10px 0;
+    padding-left: 0;
+    padding-bottom: 10px;
   }
 
   &--patronymic {
-    padding: 0 0 10px 0;
+    padding-left: 0;
+    padding-bottom: 10px;
   }
 
   &--phone {
@@ -99,8 +102,34 @@
     height: 15px;
     top: 5px;
     left: 12px;
-    background-color: $aquamarine;
+    background-color: $secondary-color;
     border-radius: 50px;
+  }
+}
+
+.form__radio + .form__label-radio:hover {
+  &::before {
+    border: 2px solid $secondary-color;
+  }
+}
+
+.form__radio + .form__label-radio:active {
+  &::before {
+    opacity: 0.3;
+    border: 2px solid $black;
+  }
+}
+
+.form__radio:disabled + .form__label-radio {
+  &::before {
+    opacity: 0.1;
+  }
+}
+
+.form__radio:disabled + .form__label-radio:hover {
+  &::before {
+    opacity: 0.1;
+    border: 2px solid $black;
   }
 }
 
@@ -135,6 +164,32 @@
   }
 }
 
+.form__checkbox + .form__label-checkbox:hover {
+  &::before {
+    border: 2px solid $secondary-color;
+  }
+}
+
+.form__checkbox + .form__label-checkbox:active {
+  &::before {
+    opacity: 0.3;
+    border: 2px solid $black;
+  }
+}
+
+.form__checkbox:disabled + .form__label-checkbox {
+  &::before {
+    opacity: 0.1;
+  }
+}
+
+.form__checkbox:disabled + .form__label-checkbox:hover {
+  &::before {
+    opacity: 0.1;
+    border: 2px solid $black;
+  }
+}
+
 .form__radio,
 .form__checkbox {
   display: none;
@@ -142,11 +197,15 @@
 
 .form__input {
   width: 100%;
-  color: $primary-color;
   font-size: 17px;
   line-height: 18px;
   border: none;
   border-bottom: 2px solid $black;
+
+  &:hover {
+    border-bottom: 2px solid $secondary-color;
+  }
+
 
   &--name {
     padding-bottom: 15px;
@@ -173,6 +232,38 @@
     margin-bottom: 0;
     margin-top: 20px;
   }
+
+  &::placeholder {
+    color: $black;
+    opacity: 0.3;
+  }
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 2px solid $secondary-color;
+
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+// CHANGE
+
+.form__input--phone:hover + .form__label--phone .form__icon-phone {
+  fill: $secondary-color;
+}
+
+.form__input--phone:focus + .form__label--phone .form__icon-phone {
+  fill: $secondary-color;
+}
+
+.form__input--email:hover + .form__label--email .form__icon-email {
+  fill: $secondary-color;
+}
+
+.form__input--email:focus + .form__label--email .form__icon-email {
+  fill: $secondary-color;
 }
 
 .form__wrapper-color {
@@ -189,13 +280,33 @@
 }
 
 .form__textarea {
-  padding: 14px 17px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  padding-left: 17px;
+  padding-right: 17px;
   width: 100%;
   font-size: 17px;
   line-height: 18px;
-  color: $primary-color;
   border: 2px solid $primary-color;
   margin-top: 20px;
+
+  &::placeholder {
+    color: $black;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    border: 2px solid $secondary-color;
+  }
+}
+
+.form__textarea:focus {
+  outline: none;
+  border: 2px solid $secondary-color;
+
+  &::placeholder {
+    opacity: 1;
+  }
 }
 
 .form__block--add {
@@ -380,8 +491,6 @@
     &--phone,
     &--email {
       width: 500px;
-      // padding-top: 20px;
-      // margin-right: 50px;
       background-color: $greyf1;
     }
   }
