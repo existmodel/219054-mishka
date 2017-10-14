@@ -89,5 +89,3 @@
       }
       });
   }
-
-  svg4everybody();
