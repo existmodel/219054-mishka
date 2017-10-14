@@ -11,12 +11,27 @@
   line-height: 19px;
   font-weight: bold;
   padding-left: 35px;
+  color: $black;
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .copyright__icon {
   position: absolute;
   right: 35px;
   top: 15px;
+  fill: $secondary-color;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $tablet-width) {

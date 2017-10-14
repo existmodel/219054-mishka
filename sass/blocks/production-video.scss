@@ -3,18 +3,35 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 60px;
+
+  &:hover {
+    box-shadow: 0 5px 16px 2px $greye6;
+  }
+
+  &:active {
+    box-shadow: 0 5px 16px 0 $greye6;
+  }
 }
 
 .production-video__content {
   border: 1px solid $greyed;
-  display: flex;
-  flex-direction: column;
 }
 
 .production-video__title {
   font-size: 17px;
   margin: 0;
   padding: 22px 0 25px 90px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 30px;
+    left: 38px;
+    background: transparent url("../img/icon-video.svg") no-repeat;
+  }
 }
 
 .production-video__description {
@@ -41,6 +58,21 @@
   top: 50%;
   z-index: 1;
   transform: translate(-50%, -50%);
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+.production-video__img {
+  display: block;
 }
 
 .production-video__order {
@@ -66,6 +98,10 @@
     br {
       display: none;
     }
+
+    &::after {
+      top: 5px;
+    }
   }
 
   .production-video__order {
@@ -75,7 +111,6 @@
 
   .production-video__movie {
     order: 1;
-    // padding-bottom: 90px;
   }
 
   .production-video__description {
@@ -86,7 +121,6 @@
 
   .production-video__description-wrapper {
     order: 3;
-    // margin: 0 42px 45px 44px;
   }
 }
 
@@ -98,30 +132,37 @@
   }
 
   .production-video__order {
-    width: 220px;
+    width: 230px;
   }
 
   .production-video__title {
     margin-right: -370px;
-    margin-top: 75px;
+    margin-top: 95px;
+    padding: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+    align-self: flex-start;
+
+    &::after {
+      top: -55px;
+      left: 40px;
+    }
   }
 
   .production-video__movie {
-    width: 685px;
-    height: 456px;
+    width: 740px;
+    padding-bottom: 0;
   }
 
   .production-video__content {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding: 0;
   }
 
   .production-video__description-wrapper {
-    padding-top: 185px;
-    width: 350px;
-    padding-left: 90px;
+    padding-top: 180px;
+    width: 335px;
+    padding-left: 70px;
   }
 
   .production-video__description {
