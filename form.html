@@ -49,7 +49,7 @@
       <h1 class="page-form__title">Вязание на заказ</h1>
       <p class="page-form__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__block ">
+        <div class="form__block">
           <h2 class="form__title">Тип</h2>
           <div class="form__wrapper-radio">
             <input class="form__radio" id="type-1" type="radio" name="type" value="accessory" checked>
@@ -75,7 +75,6 @@
             <label class="form__label form__label-checkbox" for="color-6">Оранжевый</label>
           </div>
         </div>
-
         <div class="form__block form__block-fullname">
           <h2 class="form__title">ФИО</h2>
           <div class="form__wrapper-fullname">
@@ -89,23 +88,22 @@
             <input class="form__input form__input--patronymic" id="patronymic-field" type="text" name="user-patronymic" placeholder="Отчество, если желаете">
           </div>
         </div>
-
         <div class="form__block form__block--bg form__block-phone">
           <h2 class="form__title form__title--padding-small">Тел</h2>
 
           <div class="form__wrapper-phone">
-          <input class="form__input form__input--phone" id="phone-field" type="tel" name="user-phone" placeholder="+7xxx xx xx*">
-          <label class="form__label form__label--phone" for="phone-field">
-            <svg class="form__icon-phone" width="24.829" height="24.333"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
-          </label>
+            <label>
+              <input class="form__input form__input--phone" type="tel" name="user-phone" placeholder="+7xxx xx xx*">
+              <svg class="form__icon-phone" width="24.829" height="24.333"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
+            </label>
           </div>
 
         </div>
         <div class="form__block form__block--bg form__block--email">
           <h2 class="form__title form__title-email form__title--padding-small">E-mail</h2>
           <div class="form__wrapper-email">
-            <input class="form__input form__input--email" id="email-field" type="email" name="user-email" placeholder="Ваш Email*">
-            <label class="form__label form__label--email" for="email-field">
+            <label>
+              <input class="form__input form__input--email" type="email" name="user-email" placeholder="Ваш Email*">
               <svg class="form__icon-email" width="32" height="32"><use xlink:href="img/sprite.svg#icon-email"></use></svg>
             </label>
           </div>

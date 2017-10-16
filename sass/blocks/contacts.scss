@@ -1,7 +1,7 @@
 .contacts {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
   position: relative;
 
   &::before {
@@ -9,7 +9,7 @@
     position: absolute;
     width: 320px;
     height: 7px;
-    top: -35px;
+    top: -45px;
     left: 0;
     background: transparent url("../img/bg-zigzag-line.svg") repeat;
     background-size: auto 7px;
@@ -48,6 +48,7 @@
   border-bottom: 1px solid $secondary-color;
   color: $primary-color;
   margin-left: 25px;
+  padding-bottom: 5px;
 
   &:hover {
     color: $secondary-color;
@@ -90,7 +91,7 @@
     &::before {
       width: 768px;
       height: 16px;
-      top: -55px;
+      top: -75px;
       background-size: auto 16px;
     }
 
@@ -103,6 +104,10 @@
       right: 48px;
       background: transparent url("../img/icon-flag.svg") no-repeat;
     }
+  }
+
+  .contacts__email-adress {
+    margin-left: 20px;
   }
 
   .contacts__wrapper {
@@ -129,7 +134,7 @@
   }
 
   .contacts__adress {
-    margin-left: 45px;
+    margin-left: 50px;
   }
 
   .contacts__map-wrapper {
@@ -157,7 +162,7 @@
     &::before {
       width: 1050px;
       height: 23px;
-      top: -125px;
+      top: -165px;
       background-size: auto;
     }
 
@@ -178,12 +183,12 @@
 
   .contacts__map-wrapper {
     width: 525px;
-    margin-top: -60px;
+    margin-top: -70px;
   }
 
   .contacts__wrapper {
     flex-direction: column;
-    padding-right: 45px;
+    padding-right: 50px;
   }
 
   .contacts__write {
@@ -197,11 +202,15 @@
   }
 
   .contacts__adress-text {
-    text-align: left;
+    margin-left: 25px;
   }
 
   .contacts__map {
     width: 527px;
     height: 460px;
+  }
+
+  .contacts__email-adress {
+    padding-bottom: 0;
   }
 }

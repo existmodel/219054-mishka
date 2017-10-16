@@ -45,16 +45,12 @@
       </nav>
       <h1 class="page-header__title">Милые штуки ручной<br> работы для дома</h1>
       <div class="category">
-        <!-- <div class="category__decor"> -->
-            <a href="#" class="category__decor">
-              <h2 class="category__title">Предметы<br> интерьера</h2>
-            </a>
-        <!-- </div> -->
-        <!-- <div class="category__toys"> -->
-            <a href="#" class=" category__toys">
-              <h2 class="category__title" >Детские<br> игрушки</h2>
-            </a>
-        <!-- </div> -->
+        <a href="#" class="category__decor">
+          <h2 class="category__title">Предметы<br> интерьера</h2>
+        </a>
+        <a href="#" class=" category__toys">
+          <h2 class="category__title" >Детские<br> игрушки</h2>
+        </a>
       </div>
     </header>
     <main class="page-main">
@@ -78,12 +74,16 @@
               </tr>
             </table>
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
             <img class="product__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
           </picture>
           <b class="product__price">Цена: 990 руб.</b>
-          <a class="button product__order" href="#">Заказать</a>
+          <a class="button product__order js-popup-open" href="#">Заказать</a>
         </div>
       </article>
       <section class="profile">
@@ -145,6 +145,10 @@
         </div>
         <div class="contacts__map-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
               <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <img class="contacts__map-img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
