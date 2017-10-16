@@ -45,16 +45,24 @@
   fill: $secondary-color;
 }
 
+.profile__icon-ecology {
+  margin-left: 10px;
+}
+
+.profile__icon-likes {
+  margin-left: 10px;
+}
+
 @media (min-width: $tablet-width) {
   .profile {
     width: 768px;
     padding-left: 50px;
-    margin-bottom: 145px;
+    margin-bottom: 155px;
 
     &::before {
       width: 768px;
       height: 16px;
-      top: -55px;
+      top: -65px;
       background-size: auto 16px;
     }
   }
@@ -63,6 +71,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .profile__icon-ball {
+    margin-top: 5px;
+  }
+
+  .profile__icon.profile__icon-gift {
+    margin-bottom: 15px;
   }
 
   .profile__item {
@@ -107,11 +123,12 @@
     width: 1050px;
     padding-left: 175px;
     padding-right: 175px;
+    margin-bottom: 160px;
 
     &::before {
       width: 1050px;
       height: 23px;
-      top: -55px;
+      top: -85px;
       background-size: auto;
     }
   }

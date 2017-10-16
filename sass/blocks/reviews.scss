@@ -1,6 +1,6 @@
 .reviews {
   margin: 0 auto;
-  margin-bottom: 88px;
+  margin-bottom: 85px;
   padding-left: 30px;
   padding-right: 30px;
   width: 320px;
@@ -8,7 +8,7 @@
 
 .reviews__title {
   @include second-title;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .reviews__list {
@@ -20,7 +20,7 @@
   line-height: 30px;
   color: $primary-color;
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 .reviews__item {
@@ -82,7 +82,7 @@
     padding-left: 50px;
     padding-right: 50px;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 
     &::before {
       content: "";
@@ -108,7 +108,7 @@
     width: 645px;
     padding-bottom: 55px;
     font-size: 17px;
-    padding-top: 55px;
+    padding-top: 45px;
   }
 
   .reviews__author-name {
@@ -130,7 +130,7 @@
 
   .reviews__write {
     margin-left: auto;
-    margin-top: -90px;
+    margin-top: -80px;
     width: 176px;
     order: 2;
   }
@@ -159,11 +159,12 @@
     width: 1050px;
     padding: 0;
     padding-left: 175px;
-    margin-bottom: 230px;
+    margin-bottom: 265px;
   }
 
   .reviews__title {
     @include second-title-desktop;
+    padding-bottom: 40px;
   }
 
   .reviews__write {
@@ -171,7 +172,7 @@
   }
 
   .reviews__text {
-    width: 760px;
-    padding-bottom: 0;
+    width: 780px;
+    padding-bottom: 40px;
   }
 }

@@ -13,48 +13,35 @@
         }
       });
 
-      var popupToCardOpen = document.querySelectorAll(".item-card");
+      var popupToCardOpen = document.querySelectorAll(".js-popup-open");
       var popupToCard = document.querySelector(".popup-cart");
       var popupOverlay = document.querySelector(".pop-up-overlay");
 
-      var popupOpen = document.querySelector(".product__content");
-
-    // var test = document.querySelectorAll(".item-card__icon-cart");
-    // test.forEach(function(){
-    //  this.addEventListener("click", function(){
-    //    console.log(event.target)
-    //  })
-    // })
-
-
       if (popupToCardOpen) {
-        popupToCardOpen.forEach(function(){
-          this.addEventListener("click", function (event) {
-          var target = event.target;
-          if (target.classList.contains("item-card__add-button") || target.classList.contains("item-card__icon-cart") || target.nodeName == 'use') {
+        for (var i = 0; i < popupToCardOpen.length; i++) {
+          popupToCardOpen[i].addEventListener("click", function (event) {
             event.preventDefault();
             popupOverlay.classList.add("popup-overlay--show");
             popupToCard.classList.add("popup-content--show");
-          }
-        })
-        })
-      }
-
-      if (popupOpen) {
-        popupOpen.addEventListener("click", function (event) {
-          var target = event.target;
-          if (target.classList.contains("product__order")) {
-            event.preventDefault();
-            popupOverlay.classList.add("popup-overlay--show");
-            popupToCard.classList.add("popup-content--show");
-          }
-        });
+          })
+        }
       }
 
       if (popupToCard) {
         popupToCard.addEventListener("click", function (event) {
         var target = event.target;
         if (target.classList.contains("popup-cart__button")) {
+          popupToCard.classList.remove("popup-content--show");
+          popupOverlay.classList.remove("popup-overlay--show");
+          }
+        });
+      }
+
+      if (popupOverlay) {
+        popupOverlay.addEventListener("click", function (event) {
+        var target = event.target;
+        if (target.classList.contains("pop-up-overlay")) {
+          event.preventDefault();
           popupToCard.classList.remove("popup-content--show");
           popupOverlay.classList.remove("popup-overlay--show");
           }
@@ -72,8 +59,7 @@
         }
       });
 
-
-          var map;
+      var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 59.938761, lng: 30.323210},
