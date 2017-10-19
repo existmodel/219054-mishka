@@ -33,7 +33,6 @@ gulp.task("images", function () {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
-      // imagemin.svgo()
       ]))
     .pipe(gulp.dest("img"));
 });
@@ -47,10 +46,6 @@ gulp.task("webp", function () {
 gulp.task("serve", function() {
   server.init({
     server: "build/"
-    // notify: false,
-    // open: true,
-    // cors: true,
-    // ui: false
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
@@ -81,7 +76,7 @@ gulp.task("copy", function () {
 
 gulp.task("minjs", function () {
   gulp.src("js/script.js")
-      .pipe(uglify())
-      .pipe(rename("script.min.js"))
-      .pipe(gulp.dest("build/js"))
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
 });
