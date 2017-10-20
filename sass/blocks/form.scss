@@ -268,28 +268,34 @@
   position: absolute;
   top: 10px;
   right: 7px;
+  opacity: 0.3;
 }
 
 .form__icon-email {
   position: absolute;
   top: 10px;
   right: 4px;
+  opacity: 0.3;
 }
 
 .form__input--phone:hover + .form__icon-phone {
   fill: $secondary-color;
+  opacity: 1;
 }
 
 .form__input--phone:focus + .form__icon-phone {
   fill: $secondary-color;
+  opacity: 1;
 }
 
 .form__input--email:hover + .form__icon-email {
   fill: $secondary-color;
+  opacity: 1;
 }
 
 .form__input--email:focus + .form__icon-email {
   fill: $secondary-color;
+  opacity: 1;
 }
 
 .form__wrapper-color {
@@ -363,10 +369,6 @@
     padding-left: 50px;
     padding-top: 50px;
     margin-bottom: 5px;
-
-    &--bg {
-      background-color: $greyf1;
-    }
   }
 
   .form__block--add {
@@ -392,6 +394,7 @@
 
   .form__block-color {
     padding-top: 65px;
+    background-color: $greyf1;
   }
 
   .form__wrapper-color {
@@ -399,7 +402,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 500px;
+    width: 465px;
     margin-bottom: 10px;
   }
 
@@ -441,21 +444,21 @@
   }
 
   .form__label-checkbox {
-    width: 250px;
+    width: 205px;
     padding-bottom: 18px;
-    padding-left: 85px;
+    padding-left: 80px;
 
     &::before {
       width: 50px;
       height: 50px;
       top: -15px;
-      left: 5px;
+      // left: 5px;
     }
   }
 
   .form__checkbox:checked + .form__label-checkbox {
     &::after {
-      left: 12px;
+      left: 10px;
     }
   }
 
@@ -473,12 +476,14 @@
   .form__block-phone {
     padding-top: 65px;
     margin-bottom: 0;
+    background-color: $greyf1;
   }
 
   .form__block--email {
     padding-top: 45px;
     padding-bottom: 45px;
     margin-bottom: 15px;
+    background-color: $greyf1;
   }
 
   .form__wrapper-phone {
@@ -571,7 +576,7 @@
   }
 
   .form__wrapper-color {
-    width: 700px;
+    width: 725px;
   }
 
   .form__wrapper-radio {
@@ -587,7 +592,7 @@
     font-size: 17px;
     line-height: 18px;
     font-weight: bold;
-    padding-left: 83px;
+    padding-left: 90px;
 
     &--name {
       padding-left: 0;
@@ -612,7 +617,16 @@
   }
 
   .form__label-checkbox {
-    width: 180px;
+    width: 200px;
+
+    &::before {
+      left: 5px;
+      top: -18px;
+    }
+  }
+
+  .form__checkbox:checked + .form__label-checkbox::after {
+    left: 15px;
   }
 
   .form__input {

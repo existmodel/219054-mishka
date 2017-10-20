@@ -45,8 +45,7 @@
   border: 1px solid $greyed;
   width: 130px;
   height: 52px;
-  background: transparent url("../img/icon-left-arrow.svg") no-repeat;
-  background-position: 35px 13px;
+  background: transparent url("../img/icon-left-arrow.svg") no-repeat center;
   cursor: pointer;
 
   &:hover {
@@ -62,8 +61,7 @@
   border: 1px solid $greyed;
   width: 130px;
   height: 52px;
-  background: transparent url("../img/icon-right-arrow.svg") no-repeat;
-  background-position: 35px 13px;
+  background: transparent url("../img/icon-right-arrow.svg") no-repeat center;
   margin-left: -5px;
   cursor: pointer;
 
@@ -82,7 +80,7 @@
     padding-left: 50px;
     padding-right: 50px;
     position: relative;
-    margin-bottom: 130px;
+    margin-bottom: 125px;
 
     &::before {
       content: "";
@@ -114,6 +112,7 @@
   .reviews__author-name {
     display: block;
     font-size: 18px;
+    margin-bottom: 5px;
   }
 
   .reviews__title {
@@ -137,16 +136,18 @@
 
   .reviews__prev {
     position: absolute;
-    bottom: 30px;
-    right: 60px;
+    bottom: 35px;
     border: none;
+    width: 90px;
+    right: 85px;
   }
 
   .reviews__next {
     position: absolute;
-    bottom: 30px;
-    right: -25px;
+    bottom: 35px;
+    right: -5px;
     border: none;
+    width: 90px;
   }
 
   .reviews__list {

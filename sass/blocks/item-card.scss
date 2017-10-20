@@ -6,11 +6,11 @@
   margin-top: 0;
 
   &:hover {
-    box-shadow: 0 5px 16px 2px $greye6;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0 5px 16px 0 $greye6;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
