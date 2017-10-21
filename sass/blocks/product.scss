@@ -140,6 +140,7 @@
   .product__title {
     padding-left: 170px;
     max-width: 900px;
+
     @include second-title-desktop;
   }
 
