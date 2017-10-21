@@ -108,7 +108,12 @@
 
   .contacts__email-adress {
     margin-left: 20px;
+    width: 334px;
   }
+
+  .contacts__adress-text {
+    margin-right: 30px;
+}
 
   .contacts__wrapper {
     display: flex;
@@ -135,6 +140,7 @@
 
   .contacts__adress {
     margin-left: 50px;
+    width: 334px;
   }
 
   .contacts__map-wrapper {
@@ -188,7 +194,7 @@
 
   .contacts__wrapper {
     flex-direction: column;
-    padding-right: 50px;
+    padding-right: 15px;
   }
 
   .contacts__write {
@@ -203,6 +209,7 @@
 
   .contacts__adress-text {
     margin-left: 25px;
+    margin-right: 35px;
   }
 
   .contacts__map {

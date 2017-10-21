@@ -77,6 +77,7 @@
     position: absolute;
     top: 143px;
     right: 50px;
+    z-index: -1;
   }
 
   .product__value {
@@ -88,6 +89,7 @@
     display: inline-block;
     padding-right: 140px;
     padding-bottom: 50px;
+    max-width: 600px;
   }
 
   .product__promo-title {
@@ -137,14 +139,13 @@
 
   .product__title {
     padding-left: 170px;
-
+    max-width: 900px;
     @include second-title-desktop;
   }
 
   .product__img {
     top: -22px;
     right: 50px;
-    z-index: -1;
   }
 
   .product__description {

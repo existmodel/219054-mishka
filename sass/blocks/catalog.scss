@@ -24,21 +24,12 @@
 
     @include second-title-tablet;
     padding-top: 95px;
-    margin-bottom: 85px;
+    margin-bottom: 60px;
     position: relative;
     z-index: -1;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 768px;
-      height: 20px;
-      top: 210px;
-      left: 0;
-      background: transparent url("../img/bg-zigzag-fill.svg") repeat;
-      background-size: auto 20px;
-      z-index: 1;
-    }
+    background-color: #f1f1f1;
+    border-image: url(../img/bg-zigzag-fill.svg) 50 repeat;
+    border-bottom: 25px solid;
   }
 }
 
@@ -55,15 +46,9 @@
 
   .catalog__title {
     @include second-title-desktop;
-    margin-bottom: 130px;
-    padding-bottom: 100px;
+    margin-bottom: 110px;
+    padding-bottom: 85px;
     margin-top: -60px;
-
-    &::after {
-      width: 1150px;
-      height: 20px;
-      top: 235px;
-      background-size: auto;
-    }
+    border-bottom: 38px solid;
   }
 }

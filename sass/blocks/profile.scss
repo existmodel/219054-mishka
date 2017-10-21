@@ -70,7 +70,6 @@
   .profile__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .profile__icon-ball {
@@ -86,10 +85,10 @@
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 65px;
+    width: 334px;
 
     &--love {
       order: 2;
-      padding-right: 105px;
     }
 
     &--price {
@@ -98,7 +97,6 @@
 
     &--patriotism {
       order: 4;
-      padding-right: 60px;
     }
 
     &--likes {
@@ -108,7 +106,6 @@
 
     &--gift {
       order: 6;
-      padding-right: 120px;
     }
   }
 
@@ -136,5 +133,9 @@
   .profile__title {
     @include second-title-desktop;
     padding-bottom: 40px;
+  }
+
+  .profile__item {
+    width: 350px;
   }
 }
