@@ -7,19 +7,16 @@
 .main-nav__logo {
   text-align: center;
   padding-bottom: 15px;
+  padding-top: 25px;
   border-bottom: 1px solid $greyec;
   background-color: $white;
   width: 320px;
 }
 
-.main-nav__logo-image {
-  padding-top: 12px;
-}
-
 .main-nav__toggle {
   position: absolute;
   right: 29px;
-  top: 22px;
+  top: 33px;
   width: 21px;
   height: 21px;
   border: none;
@@ -72,8 +69,8 @@
 .main-nav__item {
   padding-right: 20px;
   padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   border-bottom: 1px solid $greyec;
 
   &--delivery {
@@ -114,6 +111,7 @@
 
   .main-nav__list {
     position: absolute;
+    z-index: 1;
 
     &--user {
       top: 180px;
@@ -140,6 +138,7 @@
     border-bottom: 1px solid $greyec;
     padding-left: 50px;
     text-align: left;
+    padding-top: 0;
 
     &:hover {
       opacity: 0.5;
@@ -201,7 +200,7 @@
   .main-nav__icon-search {
     margin-right: 15px;
     margin-left: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .main-nav__icon-cart {
@@ -291,6 +290,7 @@
     &--new {
       border: none;
       padding-left: 50px;
+      padding-top: 20px;
       order: 6;
     }
 
@@ -299,6 +299,7 @@
       padding-right: 490px;
       order: 7;
       padding-left: 45px;
+      padding-top: 20px;
     }
   }
 
